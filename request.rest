@@ -1,0 +1,56 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/1
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "id_employee": 1,
+    "name": "Abi Baskara Atthallah",
+    "email": "abibaskara211@gmail.com",
+    "gender": "Male",
+    "password": "password",
+    "confPassword": "password"
+}
+
+###
+PATCH  http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name": "Abi Baskara Atthallah",
+    "email": "abibaskara211@gmail.com",
+    "gender": "Male"
+}
+
+###
+DELETE   http://localhost:5000/users/1
+
+########### EMPLOYE ############
+GET http://localhost:5000/employee
+
+###
+POST http://localhost:5000/employee
+Content-Type: application/json
+
+{
+    "name_employee": "Abi Baskara A",
+    "address": "Villa Mutiara Lido Blok A4 No 18",
+    "phone": "082299915127"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "abibaskara211@gmail.com",
+    "password": "password"
+}
+
+
+###
+GET http://localhost:5000/token
